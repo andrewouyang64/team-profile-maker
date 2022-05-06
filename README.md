@@ -8,5 +8,7 @@
 
 - The jest package is used for tests on all units to make sure they pass the test.
 
-- Video demo link: 
+- Video demo link: https://watch.screencastify.com/v/ebLqIiwzCZkaCL1dLa3x
+
+- sample Page: dist/myTeam.html
 
