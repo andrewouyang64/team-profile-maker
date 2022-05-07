@@ -171,14 +171,6 @@ class TeamGenerator {
       })
   }
 
-  createHTML() {
-    this.writeHTML();
-
-      fs.writeFile('./dist/myTeam.html', this.HTML, (err) =>
-      err? console.log(err) : console.log('Successfully created myTeam.html!'))
-     
-    }
-
   writeHTML() {
     let cards = '';
     // Write cards
@@ -192,7 +184,16 @@ class TeamGenerator {
 
   }
 
-}
+  createHTML() {
+    this.writeHTML();
+
+      fs.writeFile('./dist/myTeam.html', this.HTML, (err) =>
+      err? console.log(err) : console.log('Successfully created myTeam.html!'))
+     
+    }
+
+  }
+
 teamGenerator = new TeamGenerator;
 teamGenerator.addTeamMember();
 
